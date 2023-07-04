@@ -1,0 +1,170 @@
+Q1. What are the two values of the Boolean data type? How do you write them?
+Ans. The Boolean data type represents a logical value that can be either true or false. In programming, the two values of the Boolean data type are typically written as "true" and "false".
+
+Q2. What are the three different types of Boolean operators?
+Ans. The three different types of Boolean operators are:
+(a) AND operator: The AND operator returns true if both operands are true; otherwise, it returns false. It is typically represented using the symbol "&&" or the word "AND".
+(b) OR operator: The OR operator returns true if at least one of the operands is true; otherwise, it returns false. It is typically represented using the symbol "||" or the word "OR".
+(c) NOT operator: The NOT operator negates the value of its operand. If the operand is true, the NOT operator returns false, and if the operand is false, the NOT operator returns true. It is typically represented using the symbol "!" or the word "NOT".
+
+Q3. Make a list of each Boolean operator&#39;s truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+Ans. 
+
+AND operator (&& or AND):
+Operand 1	Operand 2	Result
+false	        false	        false
+false	        true            false
+true	        false	        false
+true	        true	        true
+
+OR operator (|| or OR):
+Operand 1	Operand 2	Result
+false	        false	        false
+false	        true	        true
+true	        false	        true
+true	        true	        true
+
+NOT operator (! or NOT):
+Operand	     Result
+false	     true
+true	     false
+
+These truth tables represent every possible combination of Boolean values for each operator and the resulting evaluation.
+
+Q4. What are the values of the following expressions?
+(5>4) and (3==5)
+not (5>4)
+((5>4) or (3==5))
+not ((5>4) or (3==5))
+(True and True) and (True == False)
+(not False) or (not True)
+Ans. 
+(a) (5 > 4) and (3 == 5) evaluates to False.
+(b) not (5 > 4) evaluates to False.
+(c) (5 >4) or (3 == 5) evaluates to True.
+(d) not ((5 > 4) or (3 == 5)) evaluates to False.
+(e) (True and True) and (True == False) evaluates to False.
+(f) (not False) or (not True) evaluates to True.
+
+Q5. What are the six comparison operators?
+Ans. The six comparison operators are:
+
+(a) Equal to (==): This operator checks if two operands are equal and returns true if they are, and false otherwise.
+
+(b) Not equal to (!=): This operator checks if two operands are not equal and returns true if they are not equal, and false if they are equal.
+
+(c) Greater than (>): This operator checks if the left operand is greater than the right operand and returns true if it is, and false otherwise.
+
+(d) Less than (<): This operator checks if the left operand is less than the right operand and returns true if it is, and false otherwise.
+
+(e) Greater than or equal to (>=): This operator checks if the left operand is greater than or equal to the right operand and returns true if it is, and false otherwise.
+
+(f) Less than or equal to (<=): This operator checks if the left operand is less than or equal to the right operand and returns true if it is, and false otherwise.
+
+Q6. How do you tell the difference between the equal to and assignment operators?Describe a
+condition and when you would use one.
+Ans.
+-Equal to (==) operator:
+The equal to operator (==) is used for comparison. It checks whether two values are equal and returns a Boolean value of true or false based on the comparison.
+-Assignment (=) operator:
+The assignment operator (=) is used to assign a value to a variable. It assigns the value on the right side to the variable on the left side.
+
+In summary, the equal to (==) operator is used for comparison between two values, while the assignment (=) operator is used to assign a value to a variable. The equal to operator is used in conditional statements or when you need to compare values, while the assignment operator is used for variable assignment and storing values for later use.
+
+Q7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+
+Ans.
+Block 1: The first if statement ('if spam == 10') with the print statement print('eggs').
+Block 2: The second if statement ('if spam > 5') with the print statement print('bacon').
+Block 3: The else statement and the subsequent three print statements.
+
+Q8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+Ans. The code uses an if-elif-else structure to evaluate the value of spam and prints the corresponding message based on the conditions:
+
+If 'spam' is equal to 1, it will print "Hello".
+If 'spam' is equal to 2, it will print "Howdy".
+If 'spam' has any other value, it will print "Greetings!".
+
+Q9. If your programme is stuck in an endless loop, what keys you’ll press?
+Ans. If your program is stuck in an endless loop and you want to interrupt its execution, you can typically press the following key combination:
+
+On Windows or Linux:
+Press Ctrl + C
+
+On macOS:
+Press Command + .
+
+These key combinations will send an interrupt signal to the running program, causing it to terminate and allowing you to regain control. It's important to note that abruptly terminating a program using these key combinations may not always leave the program in a clean state, so it's recommended to use them as a last resort when dealing with an unresponsive or endless loop situation.
+
+Q10. How can you tell the difference between break and continue?
+Ans. The "break" and "continue" statements are control flow statements in Python that allow you to alter the flow of a loop. Here's how you can differentiate between them:
+
+-"break" statement:
+The "break" statement is used to exit or terminate the current loop, regardless of any remaining iterations. When encountered, the "break" statement immediately exits the loop and continues with the next statement after the loop. It is commonly used when you want to prematurely terminate a loop based on a certain condition. After the "break" statement is executed, the control flow moves outside of the loop's block of code.
+
+-"continue" statement:
+The "continue" statement is used to skip the rest of the current iteration and move to the next iteration of the loop. When encountered, the "continue" statement immediately jumps to the next iteration without executing the remaining statements within the loop's block for that specific iteration. It is commonly used when you want to skip certain iterations based on a condition but continue the loop. After the "continue" statement is executed, the control flow returns to the beginning of the loop for the next iteration.
+
+In summary, the "break" statement is used to exit the loop entirely, while the "continue" statement is used to skip the remaining statements within the loop's block for the current iteration and move to the next iteration.
+
+Q11.In a for loop, what is the difference between range(10),range(0,10),and range(0,10, 1)?
+Ans. In a for loop, the expressions range(10), range(0, 10), and range(0, 10, 1) are different ways to define the range of values over which the loop will iterate. However, they essentially produce the same result.
+
+-'range(10)':
+This expression generates a sequence of numbers starting from 0 (inclusive) up to 10 (exclusive), incrementing by 1 step at a time.
+The start parameter is omitted, so it assumes the default value of 0.
+The step parameter is omitted as well, so it assumes the default value of 1.
+
+-'range(0, 10)':
+This expression generates a sequence of numbers starting from 0 (inclusive) up to 10 (exclusive), incrementing by 1 step at a time.
+The start parameter is explicitly set to 0.
+The step parameter is omitted, so it assumes the default value of 1.
+
+-'range(0, 10, 1)':
+
+This expression generates a sequence of numbers starting from 0 (inclusive) up to 10 (exclusive), incrementing by 1 step at a time.
+The start parameter is explicitly set to 0.
+The step parameter is explicitly set to 1.
+
+In all three cases, the loop will iterate over the values 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. The main difference lies in how the range is specified, with the start and step parameters being explicitly set or using their default values. However, since the default values for the start and step parameters are commonly used,'range(10)' is the most frequently used form in practice.
+
+Q12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+Ans. FOR LOOP
+for i in range(1, 11):
+    print(i)
+
+WHILE LOOP
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+Both programs will produce the same output, which is the numbers 1 to 10 printed on separate lines:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Q13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+Ans. After importing the module named spam, one can call the function named bacon() using the following syntax:
+
+import spam
+spam.bacon()
+
+In this code, 'spam' is the name of the imported module, and 'bacon()' is the name of the function within that module. By using dot notation ('spam.bacon()'), you can access and call the function 'bacon()' from the 'spam' module.
+

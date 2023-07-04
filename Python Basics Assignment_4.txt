@@ -1,0 +1,107 @@
+Q1. What exactly is []?
+Ans. The symbol [] typically represents an empty list in various programming languages and contexts. A list is a data structure that stores a collection of elements in a specific order. The square brackets, [], are often used to denote the beginning and end of a list literal or to access elements within a list.
+
+Q2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+
+Ans. To assign the value 'hello' as the third value in a list stored in the variable spam, you can use the indexing notation and simply assign the value to the desired index. In Python, indexing starts at 0, so the third value would have an index of 2.
+
+For Example:
+spam = [2, 4, 6, 8, 10]
+spam[2] = 'hello'
+
+After executing the above code, the list spam will be updated to [2, 4, 'hello', 8, 10], where 'hello' is now the third value in the list.
+
+Q3. What is the value of spam [int(int('3*2)/11)]?
+Ans. spam[0]
+
+Q4. What is the value of spam [-1]?
+Ans. ['d']
+
+Q5. What is the value of spam [:2]?
+Ans. ['a', 'b']
+
+Let's pretend bacon has the list [3.14, 'cat' '11','cat', 'True'] for the next three questions.
+
+Q6. What is the value of bacon.index('cat')?
+Ans. The output will be 1 since the first occurrence of 'cat' is at index 1 in the list bacon.
+
+Q7. How does bacon.append(99) change the look of the list value in bacon?
+Ans. The output will be [3.14, 'cat', '11', 'cat', 'True', 99]. As you can see, the element 99 is appended to the end of the list bacon, extending its length by one.
+
+Q8. How does bacon.remove('cat') change the look of the list in bacon?
+Ans. The output will be [3.14, '11', 'cat', 'True'].
+The first occurrence of the element 'cat' is removed from the list bacon.
+
+Q9. What are the list concatenation and list replication operators?
+Ans. the list concatenation operator is '+', and the list replication operator is '*'.
+
+List Concatenation Operator (+):
+The + operator is used to concatenate two or more lists, resulting in a new list that contains all the elements from the operands.
+List Replication Operator (*):
+The * operator is used to replicate or repeat a list a specified number of times.
+
+It's important to note that both the list concatenation and replication operators create new lists and do not modify the original lists.
+
+Q10. What is difference between the list methods append() and insert()?
+Ans. The 'append()' and 'insert()' methods are both used to add elements to a list in Python, but they differ in how and where the elements are added:
+
+'append()' method:
+The 'append()' method is used to add an element to the end of a list. It modifies the list in-place by adding the element as the last item.
+
+'insert()' method:
+The insert() method is used to add an element at a specific index within the list. It modifies the list in-place by shifting the existing elements to the right.
+
+To summarize, the main difference between 'append()' and 'insert()' is that 'append()' adds an element to the end of the list, while 'insert()' allows you to specify the index at which to insert the element within the list.
+
+Q11. What are the two methods for removing items from a list?
+Ans. There are two commonly used methods for removing items from a list in Python:
+
+-'remove()' method:
+The 'remove()' method is used to remove the first occurrence of a specified value from the list. It modifies the list in-place.
+
+-'pop()' method:
+The 'pop()' method is used to remove an element at a specific index from the list and returns the removed element. It modifies the list in-place.
+
+Both methods offer different ways to remove elements from a list based on your specific needs. The 'remove()' method removes an element by its value, while the 'pop()' method removes an element by its index and also returns the removed element.
+
+Q12. Describe how list values and string values are identical.
+Ans. List values and string values share some similarities, but they also have notable differences. Here's a comparison of their characteristics:
+
+-Sequences: Both lists and strings are sequences, which means they are ordered collections of elements.
+-Indexing: Both lists and strings allow indexing to access individual elements. Indexing starts at 0, meaning the first element has an index of 0, the second has an index of 1, and so on.
+-Slicing: Both lists and strings support slicing, allowing you to extract sub-sequences by specifying a range of indices. Slicing creates a new sequence containing the selected elements.
+-Immutable vs. Mutable: Strings are immutable, meaning their individual characters cannot be changed once created. In contrast, lists are mutable, allowing elements to be modified, added, or removed after creation.
+
+Q13. What's the difference between tuples and lists?
+Ans. Tuples and lists are both sequence types in Python, but they have several key differences:
+
+-Mutability: Lists are mutable, meaning you can change, add, or remove elements after creation. Tuples, on the other hand, are immutable, meaning their elements cannot be modified once they are assigned. Once a tuple is created, it cannot be altered.
+-Syntax: Lists are defined using square brackets ([]), while tuples are defined using parentheses (()). For example:
+List: [1, 2, 3]
+Tuple: (1, 2, 3)
+-Purpose: Lists are typically used when you have a collection of items that may change or need to be modified dynamically. Tuples are often used when you have a collection of items that should not change throughout the program's execution. Tuples are useful for representing fixed collections of values, such as coordinates or database records.
+
+Q14. How do you type a tuple value that only contains the integer 42?
+Ans. 
+     my_tuple = (42,)
+
+Q15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+Ans. To convert a list value into its tuple form, you can use the 'tuple()' function. This function takes an iterable (such as a list) as an argument and returns a tuple containing the same elements.
+To convert a tuple value into its list form, you can use the 'list()' function. This function takes an iterable (such as a tuple) as an argument and returns a list containing the same elements.
+
+Q16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Ans. Variables that "contain" list values in Python do not actually store the list directly. Instead, they store a reference to the list object in memory. In other words, the variable contains a pointer or memory address that points to the location of the list in memory. When you assign a list to a variable, the variable becomes a reference to that list. It does not store the entire list's contents, but rather holds a reference to the memory location where the list is stored.
+
+Q17. How do you distinguish between copy.copy() and copy.deepcopy()?
+Ans. The 'copy' module in Python provides two functions for creating copies of objects: 'copy.copy()' and 'copy.deepcopy()'. They differ in how they handle object references and nested objects:
+
+-copy.copy():
+The copy.copy() function performs a shallow copy of an object. It creates a new object with a new reference but maintains references to the nested objects.
+If the original object contains mutable nested objects, changes made to the nested objects will be reflected in both the original and copied objects.
+
+-copy.deepcopy():
+The copy.deepcopy() function performs a deep copy of an object. It creates a new object with new references and recursively copies all nested objects.
+Regardless of whether the nested objects are mutable or immutable, deepcopy() creates independent copies. Changes made to the nested objects will not be reflected in either the original or the copied object.
+
+To summarize, copy.copy() creates a new object with references to the same nested objects, while copy.deepcopy() creates a new object with independent copies of all nested objects. 

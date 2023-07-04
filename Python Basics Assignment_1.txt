@@ -1,0 +1,58 @@
+Q1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+* - MULTIPLICATION (Mathematical Operators)
+'hello' - STRING
+-87.8 - FLOAT
+- Subtraction (Mathematical Operators)
+/ Division (Mathematical Operators)
++ Addition (Mathematical Operators)
+6 Integer 
+
+Q2. What is the difference between string and variable?
+Ans. A string and a variable are two different concepts in programming:
+
+String: A string is a data type used to represent text or a sequence of characters. It is typically enclosed within quotation marks (single or double). For example, "hello" and 'world' are both strings. Strings are used to store and manipulate textual data in a program.
+
+Variable: A variable is a named storage location in a program that can hold a value. It is used to store and manipulate data of different types, including strings. Variables have names that are used to reference and access their values. Unlike strings, variables can store different types of data, such as numbers, booleans, and objects. Variables allow you to store and manipulate data dynamically within a program.
+
+Q3. Describe three different data types.
+Ans. (a)Integer (int): An integer data type represents whole numbers without any decimal points. It can be both positive and negative, including zero. For example, 0, 10, -5 are all integers. Integers are typically used for counting, indexing, and performing mathematical operations that don't involve fractions or decimal values.
+
+(b)Float (float): A float data type represents decimal numbers or numbers with fractional parts. It is used to store numbers that require precision and can have decimal places. For example, 3.14, -2.5, 0.75 are all floats. Floats are commonly used in scientific calculations, financial calculations, and whenever fractional values are required.
+
+(c)String (str): A string data type represents a sequence of characters or text. It is used to store textual data, such as names, sentences, or any other combination of letters, digits, and symbols. Strings are typically enclosed within quotation marks (either single or double). For example, "Hello, World!" and 'OpenAI' are both strings. Strings are essential for working with text processing, input/output operations, and manipulating textual data in various ways.
+
+Q4. What is an expression made up of? What do all expressions do?
+Ans. An expression in programming is made up of one or more operators, operands, and sometimes functions or method calls. It represents a computation or operation that produces a value.
+
+Components of an expression:
+Operators: Operators are symbols or special characters that perform specific operations on operands.
+Operands: Operands are the values or variables that the operators act upon. They can be literals (fixed values like numbers or strings) or variables (placeholders that store values).
+Functions or Method Calls: Expressions can also involve function or method calls, where a function or method is invoked with specific arguments and returns a value.
+
+What expressions do:
+Expressions, when evaluated, produce a value. The value can be of various data types, such as numbers, strings, booleans, or objects. Expressions are the building blocks of programming logic and are used to perform calculations, comparisons, assignments, and other operations.
+Expressions can be used in various contexts, such as assigning values to variables, as conditions in control structures (if statements, loops), or as arguments to functions or methods. They allow programmers to manipulate data, perform computations, and make decisions based on the evaluated result.
+Overall, expressions are fundamental in programming as they enable the manipulation and transformation of data, enabling programs to perform complex tasks and solve problems.
+
+Q5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+Ans. Expressions are evaluated to produce values, whereas statements are used to perform actions or control the flow of a program. Expressions can be used within statements, and statements provide the structure and logic for the overall program execution.
+
+Q6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+Ans. After running the code bacon = 22 and bacon + 1, the variable bacon will still contain the value 22.
+The expression bacon + 1 evaluates to 23, but this value is not assigned to any variable. Therefore, the original value assigned to bacon, which is 22, remains unchanged.
+
+Q7. What should the values of the following two terms be?
+'spam' + 'spamspam'
+'spam' * 3
+Ans. 'spam' + 'spamspam' evaluates to 'spamspamspam'.
+'spam' * 3 evaluates to 'spamspamspam'.
+
+Q8. Why is eggs a valid variable name while 100 is invalid?
+Ans. In programming, variable names need to follow certain rules and conventions. Here's why 'eggs' is a valid variable name while '100' is invalid:
+-The first character of a variable name cannot be a digit. It must be a letter or an underscore.'eggs' is a valid variable name as it starts with a letter, and it can contain any combination of letters, digits, and underscores.
+-Variable names cannot start with a digit. They must start with a letter or an underscore.
+THerefore,'100' is an invalid variable name because it starts with a digit.
