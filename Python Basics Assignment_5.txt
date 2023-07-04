@@ -1,0 +1,51 @@
+Q1. What does an empty dictionary's code look like?
+Ans. 
+    my_dict = {}
+
+Q2. What is the value of a dictionary value with the key 'foo' and the value 42?
+Ans. 42
+
+Q3. What is the most significant distinction between a dictionary and a list?
+Ans. The most significant distinction between a dictionary and a list is the way they store and access data.
+
+-Structure:
+-A dictionary is an unordered collection of key-value pairs, where each key is unique and associated with a value. It uses a hash table or a hash map implementation, allowing for efficient retrieval of values based on their keys. Dictionary elements are accessed using keys rather than numeric indices.
+-A list, on the other hand, is an ordered collection of elements. Each element is assigned a numerical index, starting from 0, which indicates its position within the list. Lists are dynamic and can hold elements of different types. Elements in a list are accessed using their indices.
+
+-Data Access:
+-Dictionary: Values in a dictionary are accessed by specifying the corresponding key. This allows for efficient lookup based on keys rather than linear search. If you have the key, you can quickly retrieve its associated value.
+-List: Elements in a list are accessed by their index. To retrieve a value from a list, you need to know its position or index within the list. Searching for an element in a list requires iterating through the elements until a match is found.
+
+-Usage:
+-Dictionary: Dictionaries are useful when you want to associate unique keys with specific values, and you need to perform lookups based on those keys. They are commonly used for tasks like mapping, caching, and organizing data in a structured manner.
+-List: Lists are suitable when you need to store an ordered collection of items and access them by their positions. They are often used when the order of elements matters or when you need to perform operations like appending, inserting, or removing elements.
+
+In summary, the main distinction is that dictionaries use keys for data retrieval, allowing efficient lookup, while lists use indices for accessing elements in an ordered manner. Dictionaries are best suited for key-value mappings, whereas lists are used for maintaining an ordered collection of items.
+
+Q4. What happens if you try to access spam ['foo'] if spam is 'bar':100}?
+Ans. If you try to access spam['foo'] where spam is {'bar': 100}, you will get a KeyError because the key 'foo' does not exist in the dictionary spam.
+The KeyError is raised because the dictionary spam does not contain the key 'foo'. When you try to access a dictionary using a key that does not exist, Python raises a KeyError to indicate that the key was not found in the dictionary.
+
+Q5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
+Ans. The expressions 'cat' in spam and 'cat' in spam.keys() have slightly different behaviors:
+
+'cat' in spam checks whether the key 'cat' exists in the dictionary spam. It returns a Boolean value (True or False) indicating whether the key is present as a direct key in the dictionary.
+'cat' in spam.keys() checks whether the key 'cat' exists in the dictionary spam by specifically looking at the keys of the dictionary. It returns a Boolean value indicating whether the key exists among the keys of the dictionary.
+
+In summary, 'cat' in spam checks for the existence of the key 'cat' in the dictionary spam, while 'cat' in spam.keys() checks for the existence of the key 'cat' specifically among the keys of the dictionary. Both expressions provide similar results but differ in their focus on the dictionary as a whole or just its keys.
+
+Q6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+Ans. The expressions 'cat' in spam and 'cat' in spam.values() have different behaviors:
+-'cat' in spam checks whether the string 'cat' is a key in the dictionary spam. It returns a Boolean value (True or False) indicating whether the key 'cat' exists in the dictionary as a direct key.
+-'cat' in spam.values() checks whether the string 'cat' exists as a value in the dictionary spam. It returns a Boolean value indicating whether the value 'cat' can be found among the values in the dictionary.
+
+In summary, 'cat' in spam checks if 'cat' is a key in the dictionary spam, while 'cat' in spam.values() checks if 'cat' is one of the values in the dictionary spam. They provide different information about the presence of 'cat' in the dictionary, either as a key or as a value.
+
+Q7.What is a shortcut for the following code? if'color' not in spam:spam['color'] = 'black'
+Ans. A shortcut for the given code can be achieved using the dict.setdefault() method. The setdefault() method allows you to set a default value for a key in a dictionary only if the key is not already present. 
+Here's the code,
+     spam.setdefault('color', 'black')
+
+Q8. How do you "pretty print" dictionary values using which module and function?
+Ans. To "pretty print" dictionary values in Python, you can use the pprint module and its pprint() function. The pprint module provides a way to format and print complex data structures in a more readable and visually pleasing manner.
+The pprint() function from the pprint module takes the dictionary as an argument and prints it in a nicely formatted way. It automatically handles nested data structures, such as dictionaries within dictionaries, and arranges the output to enhance readability.
